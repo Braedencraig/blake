@@ -97,11 +97,13 @@ a img {
   max-height: 100px;
 }
 
-svg, a img {
+svg,
+a img {
   transition: all 0.4s ease-in-out;
 }
 
-a:hover svg , a:hover img{
+a:hover svg,
+a:hover img {
   transform: scale(1.1);
 }
 
@@ -113,8 +115,17 @@ h1 {
   font-weight: bolder;
 }
 
+span {
+  font-size: 12px;
+  margin-top: -19px;
+  color: black;
+}
 @media screen and (max-width: 767px) {
   .links {
     margin-top: 18vh;
+  }
+
+  h1 {
+    top: 10%;
   }
 }

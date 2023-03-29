@@ -93,6 +93,20 @@ export default function Home() {
         <div class="links">
           <div class="w-layout-grid grid">
             {socials.map((social, i) => {
+              if (social.url === "https://blakejohnstore.myshopify.com/") {
+                return (
+                  <a
+                    key={1}
+                    className="link"
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {social.icon}
+                    <span>MERCH</span>
+                  </a>
+                );
+              }
               return <Card key={i} url={social.url} icon={social.icon} />;
             })}
           </div>
